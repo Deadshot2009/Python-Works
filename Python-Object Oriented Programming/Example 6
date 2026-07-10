@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self,name,marks):
+        self.name=name
+        self.marks=marks
+    def add_marks(self,mark):
+        self.marks=self.marks+mark
+    def is_pass(self):
+        if self.marks>=35:
+            print("Pass")
+        else:
+            print("Fail")
+    def display(self):
+        print(self.name,self.marks)
+obj1=Student("Jeevaa",32)
+obj1.add_marks(17)
+obj1.is_pass()
+obj1.display()

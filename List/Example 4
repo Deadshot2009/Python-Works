@@ -1,0 +1,16 @@
+x = [35, 80, 20, 35, 50, 80, 95, 20, 110, 35, 50, 125, 20]
+x.pop(3)
+x.pop(2)
+x.insert(10,999)
+x[11]=555
+x.remove(max(x))
+x.sort(reverse=True)
+x.pop(2)
+x.insert(6,777)
+print(len(x))
+print(x.count(20))
+print(x.count(35))
+print(x[0])
+print(x[5])
+print(x[10])
+print(x)

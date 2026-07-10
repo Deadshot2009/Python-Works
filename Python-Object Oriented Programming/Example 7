@@ -1,0 +1,19 @@
+class Book:
+    def __init__(self,title,author,available):
+        self.title=title
+        self.author=author
+        self.available=available
+    def borrow(self):
+        if self.available==True:
+            print("Yes The Book Is Available")
+        else:
+            print("The Book Is Borrowed")
+    def return_book(self):
+        self.available=True
+        print("Book Returned Successfully")
+    def display(self):
+        print(self.title,self.author,self.available)
+obj1=Book("Python","Jeevaa",False)
+obj1.borrow()
+obj1.return_book()
+obj1.display()

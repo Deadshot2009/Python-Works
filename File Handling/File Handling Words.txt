@@ -1,0 +1,51 @@
+File Handling :
+
+In This I Am Going To Say What Are The Functions Are There And Meaning To Them 
+
+
+1) open()        - It Is A Function That Is Used To Open A File
+
+2) "x"           - It Is A Function That Is Used To Create A File
+
+3) write() or w  - It Is A Function That Is Used To Write In A File
+
+4) read or r     - 1) It Is A Function That Is Used To Read The Words 
+
+                   2) We Can Read The Words That Is Enclosed By A Single String Alone 
+
+		   3) We Can Keep The Limit How Much Letters Should Print
+
+5) readline()    -  It Is Used To Read A Whole Single Line By Choosing Which Line Is To Be Executed Can Be Stored In Parameter
+
+6) readlines()   -  It Is Used To Read Multiple Lines Even The Whole File It Can Read 
+
+7) append() or a -  We Can Add The Sentence Whatever We Want In The Lastv
+
+8) writelines()  - We Can Write Multiple Lines At A Time And Store It 
+
+9) seek()        - We Can Decide Where Our Pointer Is To Be Located
+
+10) tell()       - It Is Used To Say Where The Pointer Is Located
+
+11) flush()      - It Is A Function That Is Used To Save The Command Without Closing It 
+
+12) truncate()   - It Is A Function That Is Used To Slice The Command And It Will Remove The Remaining Part 
+
+13) Read And Write or r+ - It Is A Function That Is Used To Read And Write
+
+14) os.rename - It Is Used To Rename Our File
+
+15) os.remove - It Is Used To Delete Our File
+
+16) os.rmdir  - It Is Used To Delete Our Folder
+
+17) os.mkdir  - It Is Used To Create A Folder
+
+18) os.rmtree - It Is Used To Delete A Folder That Contains Multiple Files
+
+19) os.path.exists - It Is Used To Say Whether The Folder Is There Or Not We Will Use If Else For This To Find 
+
+20) with open  - It Is Also Same As Open But We Don't Need To Use f.close()
+
+
+

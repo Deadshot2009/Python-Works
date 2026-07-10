@@ -1,0 +1,5 @@
+book={"Title":"Python","Author":"Guido","Price":600}
+book["Price"]=750
+book.update({"Pages":450})
+print(book.get("Pages"))
+print(book)

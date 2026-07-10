@@ -1,0 +1,24 @@
+def student_result(maths,physics,chemistry):
+    total=maths+physics+chemistry
+    average=total/3
+
+    if maths>35 and physics>35 and chemistry>35:
+        grade="Pass"    
+        if average>=90:
+            grade="A Grade"
+        elif average>=75:
+            grade="B Grade"
+        elif average>=50:
+            grade="C Grade"
+        else:
+            grade="D Grade"
+    else:
+        grade="Fail"
+    
+
+    return total,average,grade
+c=student_result(95,88,91)
+d=student_result(95,20,91)
+print(c)
+print(d)
+

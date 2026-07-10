@@ -1,0 +1,29 @@
+def employee_salary(employee_name,Basic_salary,years_of_experience,performance_rating):
+    if years_of_experience>=10:
+        bonus=Basic_salary*20/100
+    elif years_of_experience>=5 and years_of_experience<=9:
+        bonus=Basic_salary*10/100
+    else:
+        bonus=Basic_salary*5/100
+    
+    if performance_rating>=5:
+        performance_bonus=10000
+    elif performance_rating>=4:
+        performance_bonus=5000
+    elif performance_rating>=3:
+        performance_bonus=2000
+    else:
+        performance_bonus=0
+    
+    global Total_salary
+    Total_salary=bonus+performance_bonus+Basic_salary
+
+    return employee_name,bonus,performance_bonus,Total_salary
+y=employee_salary("Jeevaa",50000,11,4)
+print(y)
+
+if Total_salary>=100000:
+    print("Excellent!")
+else:
+    print("Good")
+    

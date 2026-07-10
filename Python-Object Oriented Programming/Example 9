@@ -1,0 +1,38 @@
+class FoodOrder:
+    def __init__(self, customer_name, food_name, quantity, price_per_item):
+        self.customer_name = customer_name
+        self.food_name = food_name
+        self.quantity = quantity
+        self.price_per_item = price_per_item
+
+    def total_price(self):
+        total_price_amt = self.quantity * self.price_per_item
+        print("Total Price :", total_price_amt)
+
+    def change_quantity(self, new_quantity):
+        self.quantity = new_quantity
+        print("Quantity Updated")
+
+    def apply_discount(self, percent):
+        total = self.quantity * self.price_per_item
+        discount = total * percent / 100
+        final_price = total - discount
+
+        print("Discount Applied")
+        print("Final Price :", final_price)
+
+    def display(self):
+        print("Customer :", self.customer_name)
+        print("Food :", self.food_name)
+        print("Quantity :", self.quantity)
+        print("Price Per Item :", self.price_per_item)
+
+
+obj1 = FoodOrder("Jeevaa", "Pizza", 7, 100)
+
+obj1.total_price()
+obj1.change_quantity(3)
+obj1.total_price()
+obj1.apply_discount(10)
+obj1.display()
+    

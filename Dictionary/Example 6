@@ -1,0 +1,7 @@
+marks={"Maths":90,"Physics": 95,"Chemistry" = 92}
+marks['Physics']=99
+marks.update({"Biology":88})
+print(marks.get{'Maths'})
+c=len(marks)
+print(c)
+print(marks)

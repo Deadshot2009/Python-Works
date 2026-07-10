@@ -1,0 +1,4 @@
+student = {"Name": "Jeevaa","Age": 18,"Course": "CSBS"}
+student.update({"Age":19})
+student.update({"City":"Coimbatore"})
+print(student)

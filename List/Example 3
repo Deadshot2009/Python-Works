@@ -1,0 +1,7 @@
+x = [15, 30, 45, 60, 75, 90, 45, 30, 15]
+x.remove(30)
+x.pop()
+x[3]=999
+x.sort(reverse=False)
+x.reverse()
+print(x)

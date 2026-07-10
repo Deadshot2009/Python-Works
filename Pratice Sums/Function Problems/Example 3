@@ -1,0 +1,21 @@
+def bank(balance,deposit,withdraw):
+    balance_amt=balance+deposit
+    if withdraw<=balance_amt:
+        total_balance_amt=balance_amt-withdraw
+    else:
+        print("Insufficient Balance")
+        return balance_amt
+
+    if total_balance_amt>=100000:
+        print("Premium Customer")
+    else:
+        print("Normal Customer")
+    return total_balance_amt,balance_amt
+c=bank(50000,10000,20000)
+d=bank(40000,5000,60000)
+e=bank(120000,10000,5000)
+
+print(c)
+print(d)
+print(e)
+    
