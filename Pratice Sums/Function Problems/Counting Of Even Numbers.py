@@ -8,5 +8,3 @@ def count_even(*numbers):
     return count
 result=count_even()
 print(result)
- 
- This Is Tharun I Am Jeevaa 

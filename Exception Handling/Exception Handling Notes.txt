@@ -1,0 +1,29 @@
+Exception Handling :
+
+1) Exception Handling Is Also Called As Error Handling
+
+Error Can Be Divided Into 3:
+
+	1) Compiler Time Error:
+
+		For Example : We Had Made Mistake Like "Printt" It Will Show Name Error 
+
+	2) Logical Error:
+
+		For Example: a=10 , b=20 If We Print Like print(a+a) The Code Will Run And Will Give The Correct Output But We Were Trying To Give print(a+b)
+
+	3) Run Time Error:
+
+		For Example: Run Time Error Is Something That When The Program Is Running When An Error Occurred That Is Called Run Time Error
+
+2) We Can't Do Anything For Compiler Error And Logical Error That's Our Mistake But We Can Change Our Run Time Error That Is Called Exception Handling
+
+3) try = We Can Use Try If The Code Is Correct It Will Run Otherwise The Statement In except Will Run 
+
+4) exception Is A Built in Class Which Can Handle All Type Of Error That Can Be Used In except
+
+5) finally this is also a keyword means The Statement Should Run Whether The Code Is True Or False 
+
+6) else will run When The Code Is No Error else Block Will Run 
+
+7) raise will stop the program if the program is error and will print the exception 
