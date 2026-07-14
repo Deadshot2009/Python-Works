@@ -1,0 +1,6 @@
+try:
+    a=int(input("Enter The Number"))
+    b=int(input("Enter The Number"))
+    print(a+b)
+except Exception as e:
+    print("This Is A Error",e)
