@@ -1,0 +1,44 @@
+class ATM:
+    def __init__(self,account_holder,balance,pin,is_logged_in):
+        self.account_holder=account_holder
+        self.balance=balance
+        self.pin=pin
+        self.is_logged_in=is_logged_in
+    def login(self,entered_pin):
+        if entered_pin==self.pin:
+            self.is_logged_in=True
+            print("Login Successfully")
+        else:
+            print("Incorrect Pin")
+    def deposit(self,amount):
+        if self.is_logged_in==True:
+            self.balance+=amount
+            print("Deposit Successfully")
+        else:
+            print("Please Login First")
+    def withdraw(self,amount):
+        if self.is_logged_in==False:
+            print("Please Login First")
+        elif self.balance>=amount:
+            self.balance-=amount
+            print("Withdraw Successfully")
+        else:
+            print("Insufficient Balance")
+    def logout(self):
+        if self.is_logged_in==False:
+            print("Logout Successfully")
+        else:
+            print("Already Logout")
+    def display(self):
+        print("Account Holder Name:",self.account_holder)
+        print("Balance:",self.balance)
+        print("Logged In:",self.is_logged_in)
+obj1 = ATM("Jeevaa", 5000, 1234, False)
+
+obj1.login(1234)
+obj1.deposit(1000)
+obj1.withdraw(2500)
+obj1.logout()
+obj1.display()
+        
+    

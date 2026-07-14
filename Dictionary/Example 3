@@ -1,0 +1,4 @@
+employee={"Name":"Rahul","Age":25,"Salary":35000}
+employee["Salary"]=40000
+print(employee)
+

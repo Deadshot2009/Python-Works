@@ -1,0 +1,8 @@
+x = [18, 42, 18, 7, 99, 42, 18, 56, 99, 12]
+x.remove(18)
+x.insert(3,100)
+x.sort()
+x.reverse()
+y=x.count(42)
+print(y)
+print(x)

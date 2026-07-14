@@ -1,0 +1,11 @@
+student={"Name":"Jeevaa" , "Age":18, "Maths": 95,"Physics":90}
+student["Age"]=19
+student["Maths"] +=5
+student.update({"Chemistry":92})
+student.update({"City":"Coimbatore"})
+print(student.get("Physics"))
+c=len(student)
+print(c)
+print("Maths" in student)
+print("English" in student)
+print(student)

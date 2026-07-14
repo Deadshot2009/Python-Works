@@ -1,0 +1,12 @@
+product={"Name":"Laptop","Price":65000,"Stock":20}
+product["Stock"]-=4
+product["Price"]+=5000
+product.update({"Brand":"Dell"})
+product.update({"Warranty":"2 Years"})
+print(product["Brand"])
+print(product.get("Price"))
+c=len(product)
+print(c)
+print("Discount" in product)
+print("Stock" in product)
+print(product)

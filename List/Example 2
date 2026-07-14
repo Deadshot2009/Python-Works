@@ -1,0 +1,6 @@
+x = [45, 12, 67, 45, 89, 23, 67, 12, 90, 45]
+x.pop()
+x[4]=100
+x.sort(reverse=True)
+x.pop()
+print(x)

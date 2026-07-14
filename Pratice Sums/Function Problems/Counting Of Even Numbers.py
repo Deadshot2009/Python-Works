@@ -8,3 +8,7 @@ def count_even(*numbers):
     return count
 result=count_even()
 print(result)
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> new-master

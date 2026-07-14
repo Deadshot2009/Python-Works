@@ -1,0 +1,31 @@
+def atm(name,balance,deposit,withdraw,pin_correct):
+    if pin_correct==True:
+        balance_amt=balance+deposit
+        if withdraw<=balance_amt:
+            total_balance_amt=balance_amt-withdraw
+            if total_balance_amt>=200000:
+                customer="Platinum Customer"
+            elif total_balance_amt>=100000:
+                customer="Gold Customer"
+            elif total_balance_amt>=50000:
+                customer="Silver Customer"
+            else:
+                customer="Normal Customer"
+        else:
+            print("Insufficient Balance")
+            return balance_amt
+    else:
+        print("Your PIN Is Incorrect")
+        return balance
+    print("Customer Name Is:",name)
+    print("Final Balance Is:",total_balance_amt)
+    return name,total_balance_amt,customer
+a=atm("Jeevaa",50000,10000,15000,True)
+b=atm("Rahul",90000,5000,100000,True)
+c=atm("Arun",150000,70000,50000,True)
+d=atm("Kavin",80000,10000,20000,False)
+
+print(a)
+print(b)
+print(c)
+print(d)

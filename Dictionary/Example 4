@@ -1,0 +1,4 @@
+car={"Brand":"BMW","Model":"X5","Price":9000000}
+car["Price"]=8500000
+car.update({"Color":"Black"})
+print(car)

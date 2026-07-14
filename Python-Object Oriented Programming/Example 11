@@ -1,0 +1,34 @@
+class HotelRoom:
+    def __init__(self,customer_name,room_number,days,price_per_day,is_booked):
+        self.customer_name=customer_name
+        self.room_number=room_number
+        self.days=days
+        self.price_per_day=price_per_day
+        self.is_booked=is_booked
+    def book_room(self):
+        if self.is_booked==True:
+            print("Room Booked Successfully")
+        else:
+            print("Room Already Booked")
+    def extend_stay(self,extra_days):
+        self.days+=extra_days
+        print("Stay Extended")
+    def checkout(self):
+        if self.is_booked==True:
+            total_bill=self.days*self.price_per_day
+            print("Checkout Successfully")
+            print("Total Amount Is:",total_bill)
+        else:
+            print("No Active Booking")
+    def display(self):
+        print("Customer Name:",self.customer_name)
+        print("Room Number:",self.room_number)
+        print("Days:",self.days)
+        print("Price Per Day:",self.price_per_day)
+        print("Booked:",self.is_booked)
+obj1 = HotelRoom("Jeevaa", 101, 2, 2000, False)
+
+obj1.book_room()
+obj1.extend_stay(1)
+obj1.checkout()
+obj1.display()
